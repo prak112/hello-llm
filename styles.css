@@ -1,0 +1,59 @@
+body{
+  font-family:cursive;
+  background-color: beige;  
+}
+
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  color:rgb(41, 121, 25);
+}
+
+.sub-heading {
+  color: rgb(33, 61, 151);
+  text-align: center;
+}
+
+#intro {
+  margin: auto;
+  padding-top: 2%;
+  width: 50%;
+}
+
+img {
+  width: fit-content;
+  height: fit-content;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+li {
+  list-style-type:lower-latin;
+  margin: auto;
+}
+
+a {
+  color: maroon;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.element {
+  margin: auto;
+  width: 50%
+}
+
+footer {
+  margin: auto;
+  padding-top: 2%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 50%;
+}
