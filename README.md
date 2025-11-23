@@ -43,3 +43,33 @@ To find more information about 5-day crash course newsletter, check out Brian Je
 
 
 ## Day 3 - JavaScript
+- Challenges completed:
+  - Stack user inputted text
+  - Add like and dislike buttons to act as counters
+  - Toggle background color
+  - Toggle between Show/Hide content
+
+- Learn by patterns. This is the pattern I followed:
+  - Plan HTML element
+  - Build it (Wait for the Styles!)
+  - Get the element
+  - Implement JavaScript functionality (`addEventListener`)
+  - If successful, then implement Styles.
+
+- Most common errors or issues I faced:
+  - Retrieving NaN values when trying to toggle between modes
+  - Forgetting syntax in all languages
+
+- Common troubleshooting that helped:
+  - `console.log()` statements
+  - Breaking down the issue into multiple micro-issues
+  - Web search the micro-issue
+
+- Most successful implementation:
+  - Toggle background colors (quite simple) 
+
+- Everything else, more or less I had to look up for the syntax while I laid down the pseudo code for the challenge
+
+
+## Day 4 - LLM
+...coming soon...
