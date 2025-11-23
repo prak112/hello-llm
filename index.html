@@ -11,6 +11,9 @@
 <body>
   <h1>Hello, LLM!</h1>
   <h2 class="sub-heading">The trials for Prakirth (aka me), begin!</h2>
+  <p align="right">
+    <button id="backgroundColorBtn">Change Background</button>
+  </p>
 
   <section id="intro">
     <p>My first attempt at integrating LLM into a basic chat interface.</p>
@@ -43,17 +46,25 @@
         integrate LLM as I turn this into a chat interface.</p>
       <p>Would be fun to see it come alive!</p>
     </div>
-    <section class="element">
+    <div class="element">
       <input id="inputText" type="text" />
       <button id="inputButton">Ask Vegeta!</button>
-      <p id="outputText"></p>
-    </section>
+      <div id="outputText"></div>
+      <button id="toggleButton">Hide Results</button>
+    </div>
+    <div class="element">
+      <p>This page has been liked <span id="count">0</span> times.</p>
+      <button id="likeBtn">Like</button>
+      <button id="dislikeBtn">Dislike</button>
+      <button id="resetRating">Let's start all over again!</button>
+    </div>
   </div>
 </body>
 
 <footer>
-  If you want to try this too, check out Brian's crash course newsletter from
-  <a href="https://www.parsity.io/noob" target="_blank">here</a>
+  <p>If you want to try this too, check out Brian's crash course newsletter from
+  <a href="https://www.parsity.io/noob" target="_blank">here</a>.</p>
+  <p>For the source code of this project, check <a href="https://github.com/prak112/hello-llm" target="_blank">GitHub-prak112</a>.</p>
 </footer>
 
 </html>
