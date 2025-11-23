@@ -1,6 +1,38 @@
-body{
+body {
   font-family:cursive;
-  background-color: beige;  
+  background-color: beige;
+  color: black;  
+}
+
+#backgroundColorBtn {
+  background-color:darkslateblue;
+  color: antiquewhite;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.dark-mode {
+  font-family:cursive;
+  background-color: black;
+  color: wheat;  
+}
+
+.light-mode {
+  font-family:cursive;
+  background-color: yellow;
+  color: darkred;    
+}
+
+.beige-mode {
+  font-family:cursive;
+  background-color: beige;
+  color: black;    
+}
+
+.chocolate-mode {
+  font-family:cursive;
+  background-color: chocolate;
+  color: black;    
 }
 
 h1 {
@@ -49,6 +81,12 @@ a {
 .element {
   margin: auto;
   width: 50%
+}
+
+#outputText {
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
 }
 
 footer {
