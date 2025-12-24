@@ -1,16 +1,26 @@
-
-const inputContent = document.getElementById("inputText")
+const userInput = document.getElementById("inputText")
 const btn = document.getElementById("inputButton")
 const outputContainer = document.getElementById("outputText")
 
-// stack user input
-btn.addEventListener('click', function() {
-  // debugger   // output will be paused for manual execution
-  const newDiv = document.createElement('div')
-  newDiv.className = 'newText'
-  newDiv.textContent = inputContent.value
-  outputContainer.appendChild(newDiv)
-  inputContent.value = ''
+// call OpenRouter API and pass userInput
+async function callBackendApi(userPrompt) {
+  const baseUrl = "https://rqq6bfkjzi.execute-api.us-east-1.amazonaws.com"
+  const apiResponse = await fetch(baseUrl, {
+    method: "POST",
+    headers: {
+      "Content-Type": "text/plain"
+    },
+    body: JSON.stringify({text: userPrompt}),
+  })
+  const data = await apiResponse.json()
+  return data
+}
+
+// stack user input with Serverless backend response
+btn.addEventListener('click', async function() {
+  const vegetaReply = await callBackendApi(userInput.value)
+  outputContainer.value = "You: " + userInput.value + "\n" + "Vegeta: " + vegetaReply
+  userInput.value = ''
 })
 
 // add Like/Dislike counter button next to result
