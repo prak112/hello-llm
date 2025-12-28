@@ -124,18 +124,18 @@ This is a 5-day crash course project with dedicated 1-2 hours for each day whene
     - Complex and couple of prerequisites
     - Probably useful for an advanced level project, but too much overhead for a standard serverless backend.
 
-3. Serverless Tutorial (simple example, local, guided, BUT outdated aws-sdk version. Blog approx 10 years old.)
+3. Serverless Framework Tutorial (simple example, local, guided, BUT outdated aws-sdk version. Blog approx 10 years old.)
     - Guided steps were pretty clear.
     - `aws-sdk` is outdated, need to use updated version and update `package.json`
     
     *Ding! Ding! Ding! aaand we got a winner!* 
-    - Netlify blogs on Serverless JAM Stack [Part 1](https://www.netlify.com/blog/2016/09/15/serverless-jam-a-serverless-framework-tutorial/) and [Part 2](https://www.netlify.com/blog/2016/10/13/serverless-jam-a-serverless-framework-tutorial-part-2/) helps in getting setup.
-    - [Getting Started](https://www.serverless.com/framework/docs/getting-started) docs helped in clarifying the "*✖ No configuration file found*" error, where you just have to run `serverless` in command line to setup the CLI config file and register to the service.
+    - Netlify blogs on Serverless JAM Stack [Part 1](https://www.netlify.com/blog/2016/09/15/serverless-jam-a-serverless-framework-tutorial/) and [Part 2](https://www.netlify.com/blog/2016/10/13/serverless-jam-a-serverless-framework-tutorial-part-2/) based on Serverless Framework helps in getting setup.
+    - [Getting Started with Serverless Framework](https://www.serverless.com/framework/docs/getting-started) docs helped in clarifying the "*✖ No configuration file found*" error, where you just have to run `serverless` in command line to setup the CLI config file and register to the service.
     - After that it is smooth ride to setup the "hello world!" project and gives a clarity on what goes where!
 
 
 ### Lesson 6 - Serverless Backend setup and deployment
-- After building the "hello world" version of Servereless project in development mode and deployment in AWS, the following are the steps I will be taking to reorganise this project:
+- After building and understanding the "hello world" version of Servereless Framework project in development mode and deployment in AWS, the following are the steps I will be taking to reorganise this project:
 1. Store API Keys in `.env` in Serverless Backend which will be a seperate repository
 2. Serverless project structure is clear.
 ```bash
@@ -167,7 +167,7 @@ serverless-project
 
 ## TO DO:
 - [X] Build local serverless backend to host API secret and handler functions
-  - [ ] Debug Client-side issue (textarea, CORS policy, LLM timeout, )
+  - [ ] Debug Client-side issue (textarea, CORS policy, LLM timeout )
 
 -----
 -----
